@@ -1,0 +1,10 @@
+<h1> <%= @spaghetto.name %> </h1>
+<br>
+<h3> Category: <%= @spaghetto.category %> </h3>
+<h3> Length: <%= @spaghetto.as_unit %> </h3>
+<h3> Al dente? <%= @spaghetto.al_dente? %> </h3>
+
+<%= link_to "Edit", edit_spaghetto_path %> |
+<%= link_to "Back", :back %>
+
+<%= button_to "DO NOT PRESS ME", spaghetto_path, :method => "delete" %>

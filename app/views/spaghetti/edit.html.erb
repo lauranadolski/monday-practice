@@ -1,0 +1,7 @@
+<%= form_for(@spaghetto) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :length %>
+  <%= f.text_field :category %>
+  <%= f.check_box :al_dente? %>
+  <%= f.submit %>
+<% end %>

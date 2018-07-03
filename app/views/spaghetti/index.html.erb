@@ -1,0 +1,6 @@
+<% @spaghetti.each do |spaghetto| %>
+<p>
+  <%=  link_to spaghetto.name, spaghetto_path(spaghetto) %><br>
+  <%=  spaghetto.category  %>
+</p>
+<% end %>
